@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dream World </title>
+  <link rel="icon" type="image/x-icon" href="./img/3D-Eagle.ico">
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/pexels-photomix-company-212372.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  nav {
+    width: 100%;
+    height: 12vh;
+    background-color: #00000052;
+    color: #fff;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  nav .logo {
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    text-shadow: 3px 4px 2px black;
+  }.logo p{
+    color: rgb(212, 158, 86);
+    font-size: 10px;
+    text-shadow: none;
+  }
+
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2px;
+    position: relative;
+  }
+
+  nav .menu a:hover {
+    color: #00fc13;
+  }
+
+  nav .menu a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #b200fc;
+    transition: all 0.3s linear;
+  }
+
+  nav .menu a:hover::before {
+    width: 100%;
+  }
+
+  nav .menu a:first-child {
+    color: #00fc13;
+  }
+
+  main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  section h3 {
+    color: rgb(201, 50, 50);
+    font-family: imprint mt shadow regular;
+    font-size: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 2px #ffffff;
+  }
+
+  section h1 {
+    margin: 14px 0px 18px 0;
+    color: rgb(69, 233, 96);
+    font-family: jokerman regular;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 2px #000;
+  }
+
+  section p {
+    color: burlywood;
+    font-family: pristina regular;
+    font-size: 25px;
+    text-shadow: 2px 1px 1px #000;
+    margin-bottom: 45px;
+  }
+  section p2{
+    color: #a91ec5;
+    font-family: pristina regular;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  section a {
+    padding: 9px 30px;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 14px;
+  }
+
+  section .btn1 {
+    background-color: #fff;
+    color: black;
+  }
+
+  section .btn1:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s linear;
+  }
+
+  section .btn2 {
+    background-color: #00fc13;
+    color: black;
+  }
+
+  section .btn2:hover {
+    background-color: #b200fc;
+    color: #fff;
+    transition: all 0.3s linear;
+  }
+
+  .nameslideshow:after {
+    color: gold;
+    font-family: mistral regular;
+    font-size: 55px;
+    animation: changename 7s infinite linear;
+    content: '';
+  }
+
+  @keyframes changename {
+    0% {
+      content: "Portrait"
+    }
+
+    25% {
+      content: "Landscape"
+    }
+
+    50% {
+      content: "Editorial"
+    }
+
+    75% {
+      content: "Event"
+    }
+
+    100% {
+      content: "Nature"
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">
+        <h1> Imagine Your World </h1><p>A place to remember Dreams </p>
+      </div>
+      <div class="menu">
+        <a href="index.html"> Home </a>
+        <a href="service.html"> Services </a>
+        <a href="course.html"> Courses </a>
+        <a href="gal.html"> Gallery </a>
+        <a href="abo.html"> About Us </a>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <h3> Explore the World </h3>
+        <h1> <span class="nameslideshow"> </span> Photography </h1>
+        <p> Come &#127939; Capture &#128248; Learn &#127891;</p>
+        <p2>The process of capturing images digitally and via the film process with DSLRs and disposable cameras,
+        then the process of editing digitally on Photoshop</p2>
+        <center><br>
+        <a href="https:www.Photography.com" class="btn1"> Learn More </a></center>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+
+</html>

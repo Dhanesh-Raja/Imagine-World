@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dream World </title>
+  <link rel="icon" type="image/x-icon" href="./img/3D-Eagle.ico">
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+  }
+
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/pexels-phil-nguyen-1156540.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  nav {
+    width: 100%;
+    height: 12vh;
+    background-color: #85808052;
+    color: #fff;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+  }
+
+  nav .logo {
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    text-shadow: 3px 4px 2px black;
+  }.logo p{
+    color: burlywood;
+    font-size: 10px;
+    text-shadow: none;
+  }
+
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2px;
+    position: relative;
+  }
+
+  nav .menu a:hover {
+    color: #00fc13;
+  }
+
+  nav .menu a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #b200fc;
+    transition: all 0.3s linear;
+  }
+
+  nav .menu a:hover::before {
+    width: 100%;
+  }
+
+  nav .menu a:nth-child(5) {
+    color: #00fc13;
+  }
+
+  main {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: justify;
+    color: #fff;
+  }
+
+  section h3 {
+    color: rgb(240, 90, 90);
+    font-family: imprint mt shadow regular;
+    font-size: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 2px #000000;
+  }
+
+  section h1 {
+    margin: 14px 0px 18px 0;
+    color: rgb(77, 192, 77);
+    font-family: mistral regular;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 2px #000;
+  }
+
+  section h4 {
+    color: rgb(255, 255, 255);
+    font-family: pristina regular;
+    font-size: 18px;
+    text-shadow:1px 2px 2px #000;
+    margin-left: 12px;
+  }
+
+  section p {
+    color: rgb(144, 62, 182);
+    font-family: pristina regular;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #000000;
+    margin-left: 5px;
+  }
+
+  section a {
+    padding: 9px 30px;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 14px;
+  }
+
+  footer {
+    height: 15px;
+    color: #00fc13;
+  }
+
+  h2 {
+    color: #dd1558;
+    text-shadow:1px 1px 1px #000;
+    text-align: center;
+    margin-top: 28rem;
+  }
+
+  .required {
+    color: rgb(180, 16, 16);
+  }
+
+  local {
+    font-size: 12px;
+    color: #a595ee;
+
+    #contact {
+      height: 100vh;
+    }
+
+    .contact {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">
+        <h1>Imagine your World</h1><p>A place to remember Dreams </p>
+      </div>
+      <div class="menu">
+        <a href="index.html"> Home </a>
+        <a href="service.html"> Services </a>
+        <a href="course.html"> Courses </a>
+        <a href="gal.html"> Gallery </a>
+        <a href="abo.html"> About Us </a>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <pre><h1>About Us</h1>
+                <h4>  "<b> PHOTOGRAPHY targets, all at once, the head,
+                   the eye and the heart."</b>  Henri Cartier-Bresson </h4>
+          <p>                The wide range of activities and experiences offered at Dream World
+            empower your child to get out of their comfort zone and learn something new.
+            Our special staff and incredible facilities means everyone gets
+            the chance to exercise their brains and their bodies. Browse our site or
+            contact us to find out more about what we offer.</p>
+      </section>
+      <footer><div><br>
+<center> <h2>&COPY; Dhanesh Raja </h2></center>
+          </div>
+          </footer>
+    </main>
+              <!-- content start -->
+<local>          
+    <div class="topType And Date" style="margin-left: 1000px;">
+      <h3 class=" normal" style="margin-top: -50px;"><span class="required">*</span> Event Type:</h3>
+      <script type="text/javascript">   
+        $(function () {
+          switchUserTypeWithoutCalendar();
+        }); function contact() {
+          alert("Submited Succeseful")
+        }
+      </script>
+ <select id="eventType" name="eventType" style="width: 250px;"  onchange="javascript:switchUserTypeWithoutCalendar(this.value);"   class="styled">
+  <option value="" >  -- </option>
+  <option value="68507:1"    >Wedding</option>
+  <option value="233955:2"   >Studio Rental Video</option>
+  <option value="233956:2"   >Studio Rental Photography</option>
+  <option value="233957:2"   >Studio Rental Other</option>
+  <option value="68514:2"    >Portraits</option>
+  <option value="68530:2"    >Commercial</option>
+  <option value="84652:2"    >Other</option>
+</select>
+<div class="clearSmall  normal"></div><br style="clear: both;"/>
+<h3 class="  normal"><span class="required">*</span> Event Date:</h3>
+<input type="date" class="" tabindex="" aria-hidden="">
+<div class="clearSmall  normal"></div><br style="clear: both;"/>						
+</div>
+<div class="content ol" style="margin-left: 1000px;">
+  <div class="leftTitle  normal">
+    <h3><span class="required">*</span> Full Name:</h3>
+  </div>
+  <div class="rightTitle  normal">
+   <input type="character" id="lead1First" name="lead1First" size="25" class="textBlock" maxlength="20" value="" data-validation="required"/>
+  <div class="clearSmall  normal"></div><br style="clear: both;"/>
+  </div>
+
+  <div class="leftTitle  normal">
+   <h3><span class="required">*</span> Mobile No:</h3>
+  </div>
+  <div class="rightTitle  normal">
+   <input type="number" id="lead2MobilePhone" name="lead2MobilePhone" size="35" class="textBlock" placeholder="+91" maxlength="14" value="+91 " data-validation="required"/>
+  <div class="clearSmall  normal"></div><br style="clear: both;"/>
+  </div>
+
+  <div class="leftTitle  normal">
+  <h3><span class="required">*</span> Email:</h3>
+  </div>
+  <div class="rightTitle  normal">
+  <input type="email" id="lead2Email" name="lead2Email" size="35" class="textBlock" maxlength="" value="" data-validation="required"/>
+  <div class="clearSmall  normal"></div><br style="clear: both;"/>
+  </div>
+
+  <div class="leftTitle  normal">
+    <h3><span class="required">*</span> Venue name(s):</h3>
+  </div>
+  <div class="rightTitle  normal">
+    <input id="text" name="" size="35" maxlength=""  value="" type="text"  class="textBlock"  data-validation="required" />
+  <div class="clear  normal"></div><br style="clear: both;" />
+  </div>
+
+  <div class="leftTitle  normal">
+   <h3><span class="required">*</span> Notes:</h3>
+  </div>
+  <div class="rightTitle  normal">
+  <textarea id="Notes" name="Notes" cols="38" rows="5" class="textBlock"></textarea>
+  <div class="clearSmall  normal"></div><br style="clear: both;" />
+  </div>
+
+  <div class="submitButtonHolder">
+  <input type="submit" value=" Submit " id="btn" required onclick="contact()"/>
+</div>                            
+</div>
+</local>
+
+</body>
+</html>

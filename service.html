@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dream World </title>
+  <link rel="icon" type="image/x-icon" href="./img/3D-Eagle.ico">
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+  }
+
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/pexels-giuseppe-messina-4364784.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .home {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+  }
+
+  .home-content__img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border: 3px;
+    color: #9eaec0;
+    ;
+    transition: 400ms;
+    border-radius: 45% 40% 55%/60% 30% 75%;
+    box-shadow: 10px 10px 20px #9d9ea3, -10px -10px 20px #898d92;
+    filter: grayscale(0%);
+  }
+
+  .home-content__img:hover {
+    filter: grayscale(0%);
+    box-shadow: 10px 10px 30px #000000, -10px -10px 30px #2f2f2f2a;
+    transform: scale(0.9);
+  }
+
+  nav {
+    width: 100%;
+    height: 12vh;
+    background-color: #00000052;
+    color: #fff;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+  }
+
+  nav .logo {
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    text-shadow: 3px 4px 2px black;
+  }
+  .logo p{
+    color: rgb(196, 144, 77);
+    font-size: 10px;
+    text-shadow: none;
+  }
+
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2px;
+    position: relative;
+  }
+
+  nav .menu a:hover {
+    color: #00fc13;
+  }
+
+  nav .menu a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #b200fc;
+    transition: all 0.3s linear;
+  }
+
+  nav .menu a:hover::before {
+    width: 100%;
+  }
+
+  nav .menu a:nth-child(2) {
+    color: #00fc13;
+  }
+
+  main {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: justify;
+    color: #fff;
+  }
+
+
+  section h2 {
+    color: #db1637;
+    font-family: pristina regular;
+    font-size: 25px;
+    text-shadow: #9d9ea3;
+  }
+
+  section a {
+    padding: 9px 30px;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 14px;
+  }
+
+  section li {
+    color: #000000;
+    font-family:pristina regular;
+    font-size: 20px;
+    text-shadow: #ffd4d4;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">
+        <h1> Imagine Your World </h1><p>A place to remember Dreams </p>
+      </div>
+      <div class="menu">
+        <a href="index.html"> Home </a>
+        <a href="service.html"> Services </a>
+        <a href="course.html"> Courses </a>
+        <a href="gal.html"> Gallery </a>
+        <a href="abo.html"> About Us </a>
+      </div>
+    </nav>
+    <main>
+      <section style="margin-left: 20px;">
+        <h2>Photography Services include:</h2>
+        <b><pre>
+<li>Full-day or half-day photo shoots with all necessary equipment
+<li>Professional camera and lens kits
+<li>Professional lighting setup
+<li>Single-shooter and multi-shooter options
+<li>Photo editing, color correction and retouching
+<li>Complete photo library access with full usage rights
+<li>Photo metadata to SEO best practices
+<li>Photo library hosting
+  <h2>We have experience shooting all types of professional photos for our clients, including:</h2><li>Corporate team photography
+<li>Product photography
+<li>Commercial photography
+<li>Event photography
+<li>Location and architectural photography
+<li>Lifestyle photography
+<li>Food photography
+<li>Social media photography</pre></b>
+
+      </section>
+    </main>
+    <!-- ========== Start home content ========== -->
+    <div class="home">
+      <div class="home-content" data-aos="zoom-out-right">
+        <img src="./img/pexels-rahul-dogra-2779325.jpg" alt="" class="home-content__img" onclick="play()">
+      </div>
+    </div>
+    <!-- ========== End home content ========== -->
+  </div>
+</body>
+
+</html>
